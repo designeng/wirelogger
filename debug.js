@@ -79,12 +79,12 @@
  *     }
  * }
  */
-(function(global, define, logger) {
+(function(global, define) {
 define(function(require) {
-	var meld, timer, defaultTimeout, logger, createTracer, ownProp;
+	var meld, timer, defaultTimeout, createTracer, ownProp;
 
 	meld = require('meld');
-	socksjs = require('socksjs');
+	logger = require('socksjslogger');
 
 	function noop() {}
 
@@ -556,5 +556,4 @@ define(function(require) {
 });
 })(this, typeof define == 'function' && define.amd
 	? define : function(factory) { module.exports = factory(require); }
-	, customLogger
 );
