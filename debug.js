@@ -84,7 +84,7 @@ define(function(require) {
 	var meld, timer, defaultTimeout, createTracer, ownProp;
 
 	meld = require('meld');
-	logger = require('socksjslogger');
+	logger = require('sockjslogger');
 
 	function noop() {}
 
